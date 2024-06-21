@@ -11,8 +11,9 @@
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
-
-
+for (let i = 0; i < 6; i++) {
+    console.log(`${ '*'.repeat(i)}`);
+}
 
 
 // ==========================================
@@ -25,7 +26,13 @@
 // klaar!
 // ==========================================
 
-
+for (let i = 1; i < 6; i++) {
+    if ( i < 5) {
+        console.log(`loop...`);
+    } else {
+        console.log(`klaar!`);
+    }
+}
 
 
 
@@ -45,7 +52,15 @@
 // >> 9
 // ==========================================
 
-
+for (let i = 0; i < 10; i++) {
+    if (i >= 6){
+        console.log(`>> ${i}`);
+    } else if (i >= 3) {
+        console.log(`> ${i}`);
+    } else {
+        console.log(`${i}`);
+    }
+}
 
 
 
@@ -87,5 +102,23 @@
 // etc.
 // ==========================================
 
+for (let i = 0; i < 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log(`fizzbuzz`);
+    } else if (i % 3 === 0 ){
+        console.log(`fizz`);
+    } else if (i % 5 === 0){
+        console.log(`buzz`);
+    } else {
+        console.log(`${i}`);
+    }
+}
+// if (condition1) {
+//     // Block executed if condition1 is true
+// } else if (condition2) {
+//     // Block executed if condition1 is false and condition2 is true
+// } else if (condition3) {
+//     // Block executed if condition1 and condition2 are false and condition3 is true
+// }
 
 
