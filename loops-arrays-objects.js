@@ -9,6 +9,10 @@ const scores = [
     {name: 'Rianne', score: 66, grade: null}
 ];
 
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+}
+
 // Verwachtte uitkomsten:
 // 83
 // 77
@@ -32,6 +36,32 @@ const scores = [
 // D
 // ==========================================
 
+
+for (let i = 0; i < scores.length; i++) {
+    let grade;
+    switch (true) {
+        case ( scores[i].score <60):
+            grade = "F";
+            break;
+        case ( scores[i].score <70):
+            grade = "D";
+            break;
+        case ( scores[i].score <80):
+            grade = "C";
+            break;
+        case ( scores[i].score <90):
+            grade = "B";
+            break;
+        case ( scores[i].score <100):
+            grade = "A";
+            break;
+        default:
+            grade = "undefined";
+    }
+    console.log(`${scores[i].name} has a ${scores[i].score} that translates to a ${grade}.`)  ;
+
+
+}
 
 
 
